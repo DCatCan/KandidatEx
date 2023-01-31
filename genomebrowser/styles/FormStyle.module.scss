@@ -1,0 +1,54 @@
+.form {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .button {
+        &_add{
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.041);
+            border: 0;
+        }
+        
+
+    }
+
+
+
+    label{
+        margin-top: 20px;
+
+    }           
+
+    input[type=file]{
+        height: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+
+    }
+    button[type=submit]{
+        height: 30px;
+        width: 50px;
+    }
+    @media screen and (max-width: 800px) {
+        button[type=submit]{
+            height: 30px;
+            width:30%;
+            margin-bottom: 1em;
+    
+        }
+        input[type=file]{
+
+            height: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+    
+        }
+    }
+
+}
