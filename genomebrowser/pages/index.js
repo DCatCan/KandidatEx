@@ -143,7 +143,7 @@ export default function Home() {
               return;
             }
             return (
-              <p>
+              <p key={`${elem}-${i}`}>
                 {infoLabels[i]} = {elem}
               </p>
             );
